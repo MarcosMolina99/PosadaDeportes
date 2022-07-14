@@ -1,0 +1,24 @@
+/*INDEX*/
+nav{
+    display: flex;
+    flex-wrap: nowrap;
+}
+footer{
+    width: 100%;
+    display: flex;
+    flex-flow: nowrap row;
+    justify-content: space-evenly;
+    border: 2px solid black;
+}
+li{
+    list-style: none;
+    line-height: 160%;
+}
+.eCommerce{
+    width: 15%;
+    height: 15%;
+}
+div a{
+    display: block;
+}
+/*/INDEX*/
