@@ -23,19 +23,29 @@
     <!--/HEADER-->
     <main>
         <ul id="botonesPrincipales">
-            <li><a class="btn-grad" href="">Fútbol</a></li>
-            <li><a class="btn-grad" href="">Futbol americano</a></li>
-            <li><a class="btn-grad" href="">Basquét</a></li>
+            <li><a id="botonMenu" class="btn-grad" href="./paginas/camisetasFutbol.html">Fútbol</a></li>
+            <li><a id="botonMenu" class="btn-fa" href="">Futbol americano</a></li>
+            <li><a id="botonMenu" class="btn-grad" href="">Basquét</a></li>
+            <div id="divBotonCarrito">
+                <button id="botonCarrito" class="btn btn-light" type="button" data-bs-toggle="collapse" data-bs-target="#collapseWidthExample" aria-expanded="false" aria-controls="collapseWidthExample">
+                  <img id="imgBotonCarrito" src="./img/shopping-cart.png" alt="">
+                </button>
+            </div>
         </ul>
         <h2 id="tendencias">Tendencias</h2>
-
+        <div style="min-height: 120px;">
+            <div class="collapse collapse-horizontal" id="collapseWidthExample">
+              <div class="card card-body" style="width: 100%;">
+              </div>
+            </div>
+          </div>
         <section class="seccionTendencias">
             <div id="tarjetaProducto" class="card" style="width: 18rem;">
-                <img class="card-img-top" src="./img/Camiseta-Argentina.jpg" alt="Card image cap">
+                <img class="card-img-top" src="./img/Camiseta-Nueva.jpg" alt="Card image cap">
                 <div class="card-body">
                 <h5 class="card-title">Camiseta selección Argentina 2022</h5>
                 <p class="card-text">$14.999</p>
-                <a href="#" class="btn btn-primary">Ver más</a>
+                <button href="#" class="btn btn-primary">Button</button>
                 </div>
             </div>
             
@@ -44,7 +54,7 @@
                 <div class="card-body">
                 <h5 class="card-title">Camiseta Golden State Warrios 2022</h5>
                 <p class="card-text">$21.999</p>
-                <a href="#" class="btn btn-primary">Ver más</a>
+                <a href="#" class="btn btn-dark">Añadir al carrito</a>
                 </div>
             </div>
 
@@ -53,7 +63,7 @@
                 <div class="card-body">
                 <h5 class="card-title">Short River Plate titular 2022</h5>
                 <p class="card-text">$7.999</p>
-                <a href="#" class="btn btn-primary">Ver más</a>
+                <a href="#" class="btn btn-dark">Añadir al carrito</a>
                 </div>
             </div>
 
@@ -62,7 +72,7 @@
                 <div class="card-body">
                 <h5 class="card-title">Camiseta Steleers titular oficial</h5>
                 <p class="card-text">$22.999</p>
-                <a href="#" class="btn btn-primary">Ver más</a>
+                <a href="#" class="btn btn-dark">Añadir al carrito</a>
                 </div>
             </div>
 
@@ -71,8 +81,83 @@
                 <div class="card-body">
                 <h5 class="card-title">Camiseta Borussia Dortmund Oficial</h5>
                 <p class="card-text">$16.999</p>
-                <a href="#" class="btn btn-primary">Ver más</a>
+                <a href="#" class="btn btn-dark">Añadir al carrito</a>
                 </div>
+            </div>
+        </section>
+
+
+        <section id="seccionFutbol">
+            <div class="containerMessi">
+                <img class="messi" src="./img/messi-Argentina.jpg" alt="">
+            </div>
+
+            <div class="fondoCeleste">
+                <h3 class="comprar">
+                    <a href="">COMPRÁ AHORA</a>
+                    
+                </h3>
+            </div>
+
+            <div class="divItems">
+                <img class="buzoArgentina" src="./img/Buzo-Argentina.jpg" alt="">
+                <img class="retroArgentina" src="./img/ArgentinaSuplente.jpg" alt="">
+            </div>
+
+            <div class="fondoCeleste">
+                <h3 class="modernoRetro">
+                    MODERNO O RETRO
+                </h3>
+            </div>
+
+        </section>
+        
+        <section>
+            
+            <div class="seccionBasquet">
+                    <!-- <img class="fondoBasquet" src="./img/fondo4.jpg" alt=""> -->
+                    <img id="miami" class="camisetasBasquet" src="./img/miami2.jpg" alt="">
+                    <img class="camisetasBasquet" src="./img/bullls.jpg" alt="">
+                    <img class="camisetasBasquet" id="nets" class="camisetasBasquet" src="./img/nets.jpg" alt="">
+                    <img class="fondoBasquet" src="./img/fondo4.jpg" alt="">
+                    <!-- <img class="camisetasBasquet2" src="./img/portland.jpg" alt="">
+                    <img class="camisetasBasquet2" src="./img/lj.jpg" alt="">
+                    <img class="camisetasBasquet2" src="./img/bucks.jpg" alt=""> -->
+                    <div>
+                        <h2 class="subtituloNBA">TODA LA NBA</h2>
+                        <h2 class="comprarNBA">
+                            <a href="">COMPRAR AHORA</a>
+                        </h2>
+                        <h2 class="subtitulo3">LA MEJOR CALIDAD</h2>
+                    </div>
+
+                </div>
+            <div>
+
+            </div>
+        </section>
+
+
+
+        <section id="seccionFA">
+            <div>
+                <h3>LA PASIÓN TE SIGUE A TODOS LADOS, NO IMPORTA EL LUGAR</h3>
+            
+            
+                <h3>
+                    <a class="anclaFA" href="./paginas/camisetasFA.html">
+                        COMPRÁ AHORA  
+                    </a>
+                    
+                </h3>
+            </div>
+
+            
+            <div id="divTomBrady">
+                <img class="tomBrady" src="./img/TomBrady.jpg" alt="">
+            </div>
+            <div id="divSuperBowl">
+                <img class="superBowl" src="./img/Super-Bowl.jpg" alt="">
             </div>
         </section>
         

@@ -17,6 +17,7 @@ h1{
     text-align: center;
     font-family: 'Cinzel', serif;
     font-size: 3rem;
+    margin-top: 3%;
 }
 .seccionTendencias{
     display: flex;
@@ -30,9 +31,27 @@ h1{
 #botonesPrincipales{
     display: flex;
     flex-flow: row nowrap;
-    justify-content: center;
-}            
-.btn-grad {
+    justify-content: space-evenly;
+    margin-top: 2%;
+}     
+#botonMenu{
+    font-size: 22px;
+    color: black;
+}
+.btn-fa{
+    white-space: nowrap;
+}
+#divBotonCarrito{
+    width: 5%;
+}
+#botonCarrito{
+    width: 65%;
+    border: none;
+}
+#imgBotonCarrito{
+    width: 75%;
+}
+/* .btn-grad {
     background-image: linear-gradient(to right, #005C97 0%, #363795  51%, #005C97  100%);
     margin: 10px;
     padding: 15px 45px;
@@ -47,10 +66,154 @@ h1{
 }
 
 .btn-grad:hover {
-    background-position: right center; /* change the direction of the change here */
+    background-position: right center; /* change the direction of the change here
     color: #fff;
     text-decoration: none;
+} */
+#seccionFutbol{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    width: 70%;
+    height: 10%;
+    margin: 3%;
 }
+.containerMessi{
+    width: 50%;
+}
+.messi{
+    width: 100%;
+}
+.fondoCeleste{
+    margin-left: 2%;
+    width: 5%;
+    background-color: #00bbf0;
+    writing-mode: vertical-rl;
+    text-orientation: mixed;
+}
+.comprar{
+    margin: 0%;
+    margin-right: 3%;
+    
+}
+.comprar a{
+    text-decoration: none;
+    color: white;
+}
+.divItems{
+    width: 30%;
+}
+.buzoArgentina{
+    margin-left: 3%;
+    width: 100%;
+    border: 2px solid black;
+}
+.retroArgentina{
+    margin-left: 3%;
+    margin-top: 5%;
+    width: 100%;
+    border: 2px solid black;
+}
+.modernoRetro{
+    margin: 0%;
+    margin-right: 3%;
+}
+
+.seccionBasquet{
+    background-color: black;
+    display: flex;
+    flex-flow: row wrap;
+    height: 10%;
+}
+.fondoBasquet{
+    width: 20%;
+    transform: scaleX(-1);
+    margin-left: 10%;
+}
+.camisetasBasquet{
+    width: 20%;
+    height: 20%;
+    margin-top: 5%;
+    margin-right: 3%;
+}
+.subtituloNBA{
+    color: white;
+    margin-left: 47%;
+    margin-top: -49%;
+    text-align: left;
+    white-space: nowrap;
+}
+.comprarNBA a{
+    color: white;
+    margin-left: 175%;
+    margin-top: -16%;
+    text-align: left;
+    white-space: nowrap;
+}
+.subtitulo3{
+    color: white;
+    margin-left: 320%;
+    margin-top: -15%;
+    text-align: left;
+    white-space: nowrap;
+}
+
+#miami{
+    width: 16%;
+    margin-left: 5%;
+}
+h2 a{
+    margin-left: 400%;
+    margin-top: 0%;
+}
+
+
+
+#seccionFA{
+    background-color: black;
+    margin-top: 5%;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-end;
+}
+div h3{
+    color: white;
+    font-family: 'Cinzel', serif;
+    margin: 30%;
+    text-align: center;
+}
+.anclaFA{
+    color: white;
+}
+#divTomBrady{
+    margin-top: 5%;
+    width: 100%;
+    height: 30%;
+    background-color: #E14747;
+}
+.tomBrady{
+    margin-left: 5%;
+    margin-bottom: 5%;
+    width: 100%;
+}
+#divSuperBowl{
+    margin-top: 5%;
+    margin-left: 5%;
+    background-color: #005C97;
+    width: 100%;
+    margin-right: 5%;
+    margin-bottom: 5%;
+}
+.superBowl{
+    width: 100%;
+    margin-bottom: 5%;
+    margin-left: 5%;
+}
+/* .fondo2{
+    background-color: #1553CF;
+    background-color: white;
+    margin-right: 20%;
+} */
 footer{
     width: 100%;
     font-size: 20px;
@@ -60,6 +223,7 @@ footer{
     flex-direction: row;
     justify-content: space-evenly;
     align-items: center;
+    border: 2px solid black;
     background: rgb(70,186,242);
     background: linear-gradient(90deg, rgba(70,186,242,1) 0%, rgba(255,255,255,1) 45%, rgba(255,255,255,1) 46%, rgba(255,255,255,1) 47%, rgba(255,255,255,1) 48%, rgba(255,255,255,1) 49%, rgba(255,255,255,1) 50%, rgba(255,255,255,1) 51%, rgba(255,255,255,1) 52%, rgba(255,255,255,1) 53%, rgba(255,255,255,1) 54%, rgba(255,255,255,1) 55%, rgba(255,255,255,1) 56%, rgba(255,255,255,1) 57%, rgba(255,255,255,1) 58%, rgba(255,255,255,1) 59%, rgba(255,255,255,1) 60%, rgba(70,186,242,1) 100%);
 }
@@ -86,3 +250,59 @@ a img{
     width: 60%;
 }
 /*/INDEX*/
+
+
+
+
+/* CAMISETAS FUTBOL */
+#seccionCamisetas{
+    /* width: 100%;
+    display: flex;
+    flex-flow: row wrap;*/  
+    flex: 1 1 auto;
+    display:flex;
+    flex-flow:row wrap;
+    position:relative;
+    justify-content: space-evenly;
+    width:100%;
+    min-height:100%;
+    min-width: 0;
+    /* background-color: #e0ebeb; */
+}
+#tarjetaProducto{
+    margin-top: 2%;
+    margin-bottom: 2%;
+}
+.img{
+    border-bottom: 2px solid black;
+    width: 100%;
+}
+.precioTalle{
+    background-color: white;
+}
+#holanda{
+    width: 225px;
+}
+
+.talle{
+    margin-top: 25%;
+    font-family: 'Cinzel', serif;
+    color: black;
+}
+.divAniadirCarrito{
+    background-color: black;
+}
+.añadirCarrito{
+    font-family: 'Cinzel', serif;
+    color: white;
+    white-space: nowrap;
+    margin-top: 15%;
+    margin-left: 7%;
+    margin-bottom: 0%;
+    padding: 3%;
+    margin: 0%;
+}   
+
+
+
+/*/CAMISETAS FUTBOL */

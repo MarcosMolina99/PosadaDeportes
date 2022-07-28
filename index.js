@@ -1,4 +1,5 @@
 //creo el objeto con, hago un array donde guardo 4 objetos hardcodeados
+/*
 class Producto{
     constructor(id,item,precio){
         this.id= id;
@@ -25,11 +26,11 @@ listaProductos.push(cuartoProducto);
 
 
 // Se piden los datos de entrada para guardar el objeto en la lista de arrays
-let idProducto= parseInt(prompt("Ingrese el Id del producto a guardar."));
-let tipoProducto= prompt("Ingrese el tipo de item o producto.");
-let precioProducto=prompt("Ingrese el precio del producto");
-let descuentoCamisetaColombia;
-let descuentoCamisetaInglaterra;
+// let idProducto= parseInt(prompt("Ingrese el Id del producto a guardar."));
+// let tipoProducto= prompt("Ingrese el tipo de item o producto.");
+// let precioProducto=prompt("Ingrese el precio del producto");
+// let descuentoCamisetaColombia;
+// let descuentoCamisetaInglaterra;
 
 listaProductos.push(new Producto(idProducto,tipoProducto,precioProducto,));
 
@@ -71,4 +72,4 @@ for(const cadaProducto of listaProductos){
 }
 
 //Se muestra el array con los productos por consola
-console.log(listaProductos);
+console.log(listaProductos);*/
