@@ -301,7 +301,29 @@ a img{
     margin-bottom: 0%;
     padding: 3%;
     margin: 0%;
-}   
+}
+#tituloCarrito{
+    margin: 0%;
+    color: black;
+}
+.productosCarrito{
+    text-align: left;
+    display: block;
+    border-bottom: 2px solid black;
+    margin-top: 5%;
+}
+#divCarrito{
+    margin-top: 7%;
+}
+.productosCarrito h3{
+    color: black;
+    margin: 0%;
+    text-align: left;
+    font-size: 1.2rem;
+}
+.productosCarrito h4{
+    font-size: 1.2rem;
+}
 
 
 

@@ -1,10 +1,10 @@
-import { productosFutbol } from "./stockFutbol.js";
+import { productosFutbol } from "./stockProductos.js";
 
 let carrito = [];
 
 export const carritoCompras = (productoId) =>{
 
-    const containerCarrito = document.getElementById("containerCarrito");
+    const containerCarrito = document.getElementById("divCarrito");
 
 
     const renderizarProductosCarrito = () =>{
@@ -12,19 +12,22 @@ export const carritoCompras = (productoId) =>{
     
 
         let producto = productosFutbol.find(producto => producto.id ===  productoId);
-        carritoCompras.push(producto);
+        carrito.push(producto);
 
         producto.cantidad=1;
 
         let div = document.createElement("div");
 
-        div.classList.add("contenedorCamisetas");  //?
+        div.classList.add("productosCarrito");
 
         div.innerHTML = `<h3>${producto.item}</h3>
                         <h4>Precio:${producto.precio}</h4>
                         <h4>Cantidad:${producto.cantidad}</h4>`
 
         containerCarrito.appendChild(div);
+        console.log(`<h3>${producto.item}</h3>
+        <h4>Precio:${producto.precio}</h4>
+        <h4>Cantidad:${producto.cantidad}</h4>`);
     }
     renderizarProductosCarrito();
 }

@@ -20,21 +20,23 @@
     <main>
         <ul id="botonesPrincipales">
             <li><a id="botonMenu" class="btn-grad" href="/index.html">Inicio</a></li>
-            <li><a id="botonMenu" class="btn-fa" href="">Futbol americano</a></li>
-            <li><a id="botonMenu" class="btn-grad" href="">Basquét</a></li>
             <div id="divBotonCarrito">
                 <button id="botonCarrito" class="btn btn-light" type="button" data-bs-toggle="collapse" data-bs-target="#collapseWidthExample" aria-expanded="false" aria-controls="collapseWidthExample">
                   <img id="imgBotonCarrito" src="/img/shopping-cart.png" alt="">
                 </button>
             </div>
+            <div class="contenedorComun" style="min-height: 120px;">
+                <div class="collapse collapse" id="collapseWidthExample">
+                    <div class="card card-body" style="width: 100%;">
+                        <h3 id="tituloCarrito">Tu carrito</h3>
+                        <p id="divCarrito"></p>
+                    </div>
+                </div>
+            </div>
         </ul>
         <h2 id="tendencias">Nuestros Productos</h2>
-        <div style="min-height: 120px;">
-            <div class="collapse collapse-horizontal" id="collapseWidthExample">
-              <div class="card card-body" style="width: 100%;">
-              </div>
-            </div>
-          </div>
+
+
         <section class="contenedorCamisetas" id="seccionCamisetas">
             <div id="containerCarrito"></div>
         </section>
@@ -63,6 +65,7 @@
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Cinzel&display=swap');
     </style>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <script src="/stockFutbol.js" type="module"></script>
     <script src="/botones.js" type="module"></script>
     <script src="/carritoCompras.js" type="module"></script>

@@ -1,4 +1,4 @@
-import {productosFutbol} from "./stockFutbol.js";
+import {productosFutbol} from "./stockProductos.js";
 import { carritoCompras } from "./carritoCompras.js";
 
 const verProductos = (productosFutbol) =>{
@@ -13,17 +13,21 @@ const verProductos = (productosFutbol) =>{
             <div class="card-body">
                 <h5 class="card-title">${producto.item}</h5>
                 <p class="card-text">$ ${producto.precio}</p>
-                <button  href="#" class="btn btn-dark" id="botonCarrito"${producto.id} >Añadir al carrito</button>
+                <button  href="#" class="btn btn-dark" id=botonCarrito${producto.id} >Añadir al carrito</button>
             </div>
         </div>`
 
         containerProductos.appendChild(divCamisetas);
 
-        const botonAniadirCarrito = document.getElementById(`botonCarrito`);
+        const botonAniadirCarrito = document.getElementById(`botonCarrito${producto.id}`);
 
         botonAniadirCarrito.addEventListener("click", () =>{
             carritoCompras(producto.id);
-            alert(`Se agregó ${producto.item}`);
+            Swal.fire(
+                `${producto.item}`,
+                'Agregado al carrito',
+                'success'
+              )
         })
     })
 }
