@@ -1,4 +1,4 @@
-import { productosFutbol } from "./stockProductos.js";
+// import { productosFutbol } from "./stockProductos.js";
 
 let carrito = [];
 
@@ -8,8 +8,6 @@ export const carritoCompras = (productoId) =>{
 
 
     const renderizarProductosCarrito = () =>{
-
-    
 
         let producto = productosFutbol.find(producto => producto.id ===  productoId);
         carrito.push(producto);
