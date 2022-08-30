@@ -1,6 +1,8 @@
 // import {productosFutbol} from "./stockProductos.js";
 import { carritoCompras } from "./carritoCompras.js";
 
+// let acumuladorPrecios=0;
+
 const verProductos = async() =>{
     const containerProductos = document.getElementById("seccionCamisetas");
 
@@ -18,29 +20,29 @@ const verProductos = async() =>{
                 <div class="card-body">
                     <h5 class="card-title">${producto.item}</h5>
                     <p class="card-text">$ ${producto.precio}</p>
-                    <button  href="#" class="btn btn-dark" id=botonCarrito${producto.id} >Añadir al carrito</button>
-                </div>
-            </div>`
+                    <button  href="#" class="btn btn-dark" id=botonCarrito${producto.id} >Añadir al carrito</button>`
 
             containerProductos.appendChild(divCamisetas);
 
             const botonAniadirCarrito = document.getElementById(`botonCarrito${producto.id}`);
 
-            botonAniadirCarrito.addEventListener("click", () =>{
+
+            botonAniadirCarrito.addEventListener("click", async() =>{
                 carritoCompras(producto.id);
+                
                 Swal.fire(
                     `${producto.item}`,
                     'Agregado al carrito',
                     'success'
                 )
             })
+
         })
 
     }
     catch(error){
-        console.log(error);
+        console.log("Hubo un error");
     }
-
 }
 verProductos();
 

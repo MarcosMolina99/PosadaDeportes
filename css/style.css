@@ -3,11 +3,22 @@
     padding: 0px;
 }
 /*INDEX*/
+.navPrincipal{
+    display: flex;
+}
 #logo{
     margin-right: 30%;
+    width: 30%;
+    margin-top: 5%;
+}
+.linkLogo{
+    width: 25%;
 }
 h1{
     font-size: 5rem;
+    margin-top: 1%;
+    margin-left: 5%;
+    padding-top: 1%;
     text-align: center;
     font-family: 'Cinzel', serif;
     background: rgb(70,186,242);
@@ -306,12 +317,12 @@ a img{
     margin: 0%;
     color: black;
 }
-.productosCarrito{
+/* .productosCarrito{
     text-align: left;
     display: block;
     border-bottom: 2px solid black;
     margin-top: 5%;
-}
+} */
 #divCarrito{
     margin-top: 7%;
 }

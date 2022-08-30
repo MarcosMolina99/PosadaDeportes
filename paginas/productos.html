@@ -12,7 +12,7 @@
 <body>
     <header>
         <div class="navPrincipal">
-            <a href="./index.html"><img id="logo" src="" alt="logo"></a>
+            <a href="/index.html" class="linkLogo"><img src="/img/logo.png" id="logo" src="" alt="logo"></a>
 
             <h1>Posada Deportes</h1>
         </div>  
@@ -30,8 +30,11 @@
                     <div class="card card-body" style="width: 100%;">
                         <h3 id="tituloCarrito">Tu carrito</h3>
                         <p id="divCarrito"></p>
+                    <button href="#" class="btn btn-light" id=eliminarTodo>Vaciar Todo</button>      
                     </div>
+                  
                 </div>
+                
             </div>
         </ul>
         <h2 id="tendencias">Nuestros Productos</h2>
@@ -67,7 +70,7 @@
     </style>
     <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <script src="/stockProductos.js" type="module"></script>
-    <script src="/botones.js" type="module"></script>
+    <script src="/aniadoCarrito.js" type="module"></script>
     <script src="/carritoCompras.js" type="module"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
 </body>

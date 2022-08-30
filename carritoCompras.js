@@ -5,7 +5,7 @@ let carrito = [];
 export const carritoCompras = (productoId) =>{
 
     const containerCarrito = document.getElementById("divCarrito");
-
+    let acumuladorPrecios=0;
 
     const renderizarProductosCarrito = async() =>{
 
@@ -15,39 +15,61 @@ export const carritoCompras = (productoId) =>{
             let productoStock = productos.find(productos => productos.id ===  productoId);
             carrito.push(productoStock);
     
-            productos.cantidad=1;
-    
             let div = document.createElement("div");
-    
+
             div.classList.add("productosCarrito");
     
             div.innerHTML = `<h3>${productoStock.item}</h3>
                             <h4>Precio:${productoStock.precio}</h4>
-                            <h4>Cantidad:${productoStock.cantidad}</h4>`
-    
+                            `
+            
             containerCarrito.appendChild(div);
+
+                acumuladorPrecios= acumuladorPrecios + productoStock.precio;
+                console.log(acumuladorPrecios); 
+
+
+            const botonBorrarItem= document.createElement("button");
+
+            botonBorrarItem.classList.add("btn","btn-light");
+            botonBorrarItem.innerHTML = "X";
+            div.appendChild(botonBorrarItem);
+
+            botonBorrarItem.addEventListener("click",()=>{
+                div.innerText = "";
+                Swal.fire(
+                    'Producto eliminado del carrito',
+                    'Continúe con su búsqueda',
+                    'warning'
+                )
+            })
+
             console.log(`<h3>${productoStock.item}</h3>
             <h4>Precio:${productoStock.precio}</h4>
-            <h4>Cantidad:${productoStock.cantidad}</h4>`);
+            `);
+
+            const botonVaciarCarrito = document.getElementById("eliminarTodo")
+            botonVaciarCarrito.addEventListener("click", ()=>{
+                const vacioCarrito= document.getElementById("divCarrito");
+                vacioCarrito.innerHTML="";
+                carrito=[];
+                if(acumuladorPrecios>0){
+                    acumuladorPrecios=0;
+                }
+                div.innerHTML="";
+                console.log(carrito);
+                Swal.fire(
+                    'Carrito vaciado',
+                    '¡Añada más productos!',
+                    'success'
+                )
+                
+            })
+            
+
         })
-
-        // let producto = productosFutbol.find(producto => producto.id ===  productoId);
-        // carrito.push(producto);
-
-        // producto.cantidad=1;
-
-        // let div = document.createElement("div");
-
-        // div.classList.add("productosCarrito");
-
-        // div.innerHTML = `<h3>${producto.item}</h3>
-        //                 <h4>Precio:${producto.precio}</h4>
-        //                 <h4>Cantidad:${producto.cantidad}</h4>`
-
-        // containerCarrito.appendChild(div);
-        // console.log(`<h3>${producto.item}</h3>
-        // <h4>Precio:${producto.precio}</h4>
-        // <h4>Cantidad:${producto.cantidad}</h4>`);
     }
+
     renderizarProductosCarrito();
+
 }
