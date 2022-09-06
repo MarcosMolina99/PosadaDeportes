@@ -40,25 +40,12 @@ const verProductos = async() =>{
                     'Agregado al carrito',
                     'success'
                 )
-                // for(let i=0; i<localStorage.length; i++)
-                // {
-                //     localStorage.setItem('productos', JSON.stringify(producto[i]));
-                // }
-                // let miStorage = [];
-                // let miStorage = JSON.parse(localStorage.getItem('Productos'));
-                // miStorage = miStorage ? console.log("error") : [];
-                // miStorage.push('Productos')
                 // localStorage.setItem('Productos', JSON.stringify(producto));
-                // miStorage.push(producto)
-                // console.log(miStorage);
                 // localStorage.setItem("Productos", JSON.stringify(producto))
                 // const guardarProductos = (clave,valor) => {localStorage.setItem(clave,valor)};
                 // for(const cadaProducto of carritoCompras){
                 //     guardarProductos(cadaProducto.id, JSON.stringify(cadaProducto))
                 // }
-                // guardarProductos('productos', JSON.stringify(productosStorage))
-                // indice= indice+1;
-                // console.log(productosStorage);
                 // let productosStorage = [];
                 // productosStorage = JSON.parse(localStorage.getItem('Productos')) || [];
                 // productosStorage.push(producto);
