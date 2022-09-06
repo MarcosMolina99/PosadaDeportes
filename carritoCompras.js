@@ -53,8 +53,8 @@ export const carritoCompras = (productoId) =>{
                 const vacioCarrito= document.getElementById("divCarrito");
                 vacioCarrito.innerHTML="";
                 carrito=[];
-                if(acumuladorPrecios>0){
-                    acumuladorPrecios=0;
+                if(carrito.length>=1){
+                    localStorage.clear;
                 }
                 div.innerHTML="";
                 console.log(carrito);
@@ -68,6 +68,8 @@ export const carritoCompras = (productoId) =>{
             
 
         })
+        localStorage.setItem("Carrito", JSON.stringify(carrito))
+        console.log(localStorage);
     }
 
     renderizarProductosCarrito();
